@@ -68,12 +68,14 @@ def diagnose(f_name):
         #print(dic[i])
         p=max(p,dic[i])
         n=min(n,dic[i])
-    if(p> abs(n)):
-        print(p)
-    else:
-        print(n)
+    #if(p> abs(n)):
+    #    print(p)
+    #else:
+    #    print(n)
+    return p,n
 
 
-#if __name__=="__main__":
-#    diagnose(sys.argv[1])
+if __name__=="__main__":
+    p,n=diagnose(sys.argv[1])
+    print(p,n)
 
