@@ -64,15 +64,21 @@ def diagnose(f_name):
     dic=compute_correlations(f_name)
     p=-1
     n=1
+    maxEvent=""
+    minEvent=""
     for i in dic.keys():
         #print(dic[i])
-        p=max(p,dic[i])
-        n=min(n,dic[i])
+        if dic[i]>p :
+            maxEvent=i
+            p=dic[i]
+        if dic[i]<n :
+            minEvent=i
+            n=dic[i]
     #if(p> abs(n)):
     #    print(p)
     #else:
     #    print(n)
-    return p,n
+    return maxEvent,minEvent
 
 
 if __name__=="__main__":
