@@ -81,7 +81,7 @@ def diagnose(f_name):
     return maxEvent,minEvent
 
 
-if __name__=="__main__":
-    p,n=diagnose(sys.argv[1])
-    print(p,n)
+#if __name__=="__main__":
+#    p,n=diagnose(sys.argv[1])
+#    print(p,n)
 
